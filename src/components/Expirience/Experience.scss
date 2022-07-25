@@ -1,0 +1,45 @@
+.experience {
+  margin-top: 110px;
+  color: white;
+
+  h2 {
+    color: var(--color-primary);
+    margin-bottom: 3rem;
+  }
+
+  &__card {
+    background: var(--color-bg-variant);
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    width: 50%;
+    margin: 0 auto;
+
+    &:hover {
+      background: transparent;
+      border-color: var(--color-primary-variant);
+      cursor: default;
+    }
+  }
+
+  &__skills {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  &__skill {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+    .experience__card {
+      width: auto;
+    }
+}

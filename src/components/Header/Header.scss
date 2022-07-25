@@ -1,0 +1,54 @@
+.header {
+  &__container {
+    position: relative;
+    padding-top: 110px;
+    color: white;
+  }
+
+  &__typing-text {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 260px;
+    margin: 0 auto;
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 19rem;
+    bottom: 10px;
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    height: 68vh;
+
+    &__social {
+      left: 17rem;
+    }
+  }
+
+  section {
+    margin-top: 6rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    height: 100vh;
+  }
+  .header__social {
+    display: none;
+  }
+}
